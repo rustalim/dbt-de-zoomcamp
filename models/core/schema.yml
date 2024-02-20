@@ -19,7 +19,10 @@ models:
                 severity: error
       
   - name: fact_trips
-    description: ""
+    description: >
+      Taxi trips corresponding to both service zones (Green and yellow).
+      The table contains records where both pickup and dropoff locations are valid and known zones. 
+      Each record corresponds to a trip uniquely identified by tripid. 
     columns:
       - name: tripid
         data_type: string
